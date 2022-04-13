@@ -1,0 +1,15 @@
+We see that around 5% of the variance in diabetes can be explained by instruction spending per student. This correlation, while quite weak, is still very statistically significant, which means we can draw some conclusions and recommendations from it. 
+
+Note that the correlation is negative. As such, increasing the amount of money spent per student on instruction might, at least weakly, decrease the rate of diabetes. Given this, one way in which the US government might try to further fight diabetes is to increase spending in schools.
+
+NEWTOPIC
+
+We see that around 14.5% of the variance in the prevalence of heavy drinking is explained by variance in instruction spending per student. This correlation, again, is very statistically significant, indicating that it is almost certainly real.
+
+Note that this correlation is positive, which is to say that an increase in spending per student is correlated with higher levels of drinking. This indicates a potential failing in US alcohol and drug education; ideally, higher spending per student should be correlated with a lowering of heavy alcohol use, not the opposite. Given this, it seems important that the US work to improve awareness of the issues associated with heavy drinking in schools. Moreover, given the current positive correlation, it might be sensible to target these efforts first at more funded districts and. 
+
+NEWTOPIC
+
+We see that around 14.8% of the variance in life expectancy is explained by variance in instruction spending per student. This correlation, again, is very statistically significant, indicating that it is almost certainly real.
+
+As this correlation is positive, there is some reason to believe that increase spending per student correlates with higher life expectancy. Given this, it seems that there is another incentive for the US to increase spending per student.
