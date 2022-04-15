@@ -4,6 +4,7 @@ import plotly.express as px
 import statsmodels.api as sm
 from urllib.request import urlopen
 import json
+import os
 
 from dash import Dash, html, dcc, Input, Output
 
@@ -77,15 +78,19 @@ summaries = {key:val for key, val in
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+
+server = app.server
+
 app.layout = html.Div([
     html.Div([
         html.H2("Compare Two Maps of the US", 
                 style={'display':'flex', 'justify-content': 'center'}),
         html.Div([
-            dcc.Graph(id='map-1', config = {'scrollZoom': False}), 
+            dcc.Graph(id='map-1', config = {'scrollZoom': False}, style={'width':'48%'}), 
             html.Div(style={'width':'1px', 'background-color':'#000'}),
-            dcc.Graph(id='map-2', config = {'scrollZoom': False})], 
-                 style={'display':'flex', 'flex-direction':'row'}),
+            dcc.Graph(id='map-2', config = {'scrollZoom': False}, style={'width':'48%'})
+            ], 
+            style={'display':'flex', 'flex-direction':'row', 'margin':'auto', 'justify-content':'center'}),
         html.Div([
             html.Label([
                 'Map 1',
@@ -133,7 +138,7 @@ app.layout = html.Div([
             ])
         ]),
         html.Div(id='summary', 
-             style={"white-space": "pre", 'font-family': 'Monaco', 'font-size':14})
+             style={"white-space": "pre", 'font-family': 'Monaco', 'font-size':'1vw'})
     ], style={
         'display':'flex', 
         'flex-direction':'row', 
