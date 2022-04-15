@@ -4,7 +4,7 @@ Run an interactble dashboard at https://luca-data-science-project-1.herokuapp.co
 
 ## Data Sources
 
-1. [School Spending Data, 2018](https://nces.ed.gov/ccd/files.asp#Fiscal:1,LevelId:5,Page:1)
+1. [US School Spending Data, 2018](https://nces.ed.gov/ccd/files.asp#Fiscal:1,LevelId:5,Page:1)
 2. [US Diabetes Data, 2019](https://gis.cdc.gov/grasp/diabetes/DiabetesAtlas.html#)
 3. [US Alcohol Consumption Data, 2012](https://ghdx.healthdata.org/us-data)
 4. [US Life Expectancy Data, 2014](https://ghdx.healthdata.org/us-data)
