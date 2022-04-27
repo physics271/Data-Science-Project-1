@@ -151,13 +151,35 @@ app.layout = html.Div([
         'display':'flex', 
         'justify-content': 'center',
         'padding-top':'3%'
-    }),
+        }),
     html.Div(id='data insights', style={
+        'display':'flex', 
+        'margin':'auto',
+        'width':'70%',
+        "white-space": "pre-wrap"
+        }),
+    html.H4("Data Sources", style={
+        'display':'flex', 
+        'justify-content': 'center',
+        'padding-top':'3%'
+    }),
+    html.Div([
+        html.Ul([
+            html.Li(html.A(name, href = url))
+            for name, url in [
+                ('US School Spending Data, 2018', 'https://nces.ed.gov/ccd/files.asp#Fiscal:1,LevelId:5,Page:1'),
+                ('US Diabetes Data, 2019', 'https://gis.cdc.gov/grasp/diabetes/DiabetesAtlas.html#'),
+                ('US Alcohol Consumption Data, 2012', 'https://ghdx.healthdata.org/us-data'),
+                ('US Life Expectancy Data, 2014', 'https://ghdx.healthdata.org/us-data')
+            ]
+        ], style={'list-style-type':'disc'})
+    ], style={
         'display':'flex', 
         'margin':'auto',
         'width':'70%',
         "white-space": "pre-wrap", })
 ],  )
+
 
 @app.callback(
     [Output('scatter', 'figure'),
